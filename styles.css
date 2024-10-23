@@ -50,7 +50,7 @@ width: 20px;
     display: flex;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
     width: 65%;
-    margin-bottom: 20vh
+    margin-bottom: 10vh
 }
 
 .left, .right {
@@ -110,17 +110,44 @@ button:hover {
 }
 
 footer {
-    background-color: #4f575f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eb790fd8;
     color: white;
     text-align: center;
     padding: 10px 0;
     position: absolute;
     bottom: 0;
     width: 100%;
+ 
+
+
+
 }
-.footer .footer-logo{
-    text-align: center;
+.footer-logo {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+
 }
+.logo img {
+    display: block;
+    height: 50px;
+    width: 80px;
+    margin-right : 50px;
+}
+footer div {
+  
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+
+}
+footer p{
+    margin-left : 50px;
+}
+
 .social-media a {
     color: white;
     text-decoration: none;
