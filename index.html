@@ -1,70 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grievance Bank</title>
-    <link rel="icon" href="images/Logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href=
-"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
- 
-</head>
-<body>
+    <link rel="icon" href="images/Logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
     <!-- Header Section -->
     <header>
-        <div class="logo"><img src="images/Logo.png" alt="" srcset="" height="50px" width="80px"></div>
-  
+      <div class="logo">
+        <img
+          src="images/Logo.png"
+          alt=""
+          srcset=""
+          height="50px"
+          width="80px"
+        />
+      </div>
     </header>
-
+    <h1>Grievance Bank</h1>
     <!-- Main Content Section -->
     <div class="container">
-        <div class="form-container">
-            <!-- Left: Dropdown and Counter -->
-            <div class="left">
-                <label for="query-type">Select Query Type:</label>
-                <select id="query-type" onchange="updateDescription()">
-                    <option value="type1">Salary Issue</option>
-                    <option value="type2">Working Hours</option>
-                    <option value="type3">Workplace Safety</option>
-                    <option value="type4">Leave Management Issue</option>
-                    <option value="type5"> Other</option>
-                </select>
-                <div class="counter">
-                    <p>Salary Issue: <span id="type1-count">0</span></p>
-                    <p>Working Hours: <span id="type2-count">0</span></p>
-                    <p>Workplace Safety: <span id="type3-count">0</span></p>
-                    <p>Leave Management Issue: <span id="type4-count">0</span></p>
-                    <p>Other: <span id="type5-count">0</span></p>
-                </div>
-            </div>
-
-            <!-- Right: Animated Bot, Description, Textbox, and Submit -->
-            <div class="right">
-                <div class="bot">
-                    <img src="images/human.png" alt="Animated Bot" class="bot-animation">
-                </div>
-                <div class="description">
-                    <p id="type-description">Please select a query type to see the details.</p>
-                </div>
-                <textarea id="query-input" placeholder="Enter your query here..." rows="5"></textarea>
-                <button onclick="submitQuery()">Submit</button>
-            </div>
+      <div class="form-container">
+        <!-- Left: Dropdown and Counter -->
+        <div class="left">
+          <label for="query-type">Select Query Type:</label>
+          <select id="query-type" onchange="updateDescription()">
+            <option value="type1">Salary Issue</option>
+            <option value="type2">Working Hours</option>
+            <option value="type3">Workplace Safety</option>
+            <option value="type4">Leave Management Issue</option>
+            <option value="type5">Other</option>
+          </select>
+          <div class="counter">
+            <p>Salary Issue: <span id="type1-count">0</span></p>
+            <p>Working Hours: <span id="type2-count">0</span></p>
+            <p>Workplace Safety: <span id="type3-count">0</span></p>
+            <p>Leave Management Issue: <span id="type4-count">0</span></p>
+            <p>Other: <span id="type5-count">0</span></p>
+          </div>
+          <div class="solved">
+            <a href="solved.html">Solved Grievances</a>
+          </div>
         </div>
+
+        <!-- Right: Animated Bot, Description, Textbox, and Submit -->
+        <div class="right">
+          <div class="bot">
+            <img
+              src="images/human.png"
+              alt="Animated Bot"
+              class="bot-animation"
+            />
+          </div>
+          <div class="description">
+            <p id="type-description">
+              Please select a query type to see the details.
+            </p>
+          </div>
+          <textarea
+            id="query-input"
+            placeholder="Enter your query here..."
+            rows="5"
+          ></textarea>
+          <button onclick="submitQuery()">Submit</button>
+        </div>
+      </div>
     </div>
 
     <!-- Footer Section -->
     <footer>
-        <p>XYZ Company - Garments Solutions</p>
-        <p>123 Street, Gazipur, Bangladesh</p>
-        <div class="social-media">
-            <a href="#" class="fa fa-facebook"></a> | <a href="#" class="fa fa-instagram"></a> | <a href="#" class="fa fa-twitter"></a>
+      <p>XYZ Company - Garments Solutions</p>
+      <h4>123 Street, Gazipur, Bangladesh</h4>
+      <div class="social-media">
+        <a href="#" class="fa fa-facebook"></a> |
+        <a href="#" class="fa fa-instagram"></a> |
+        <a href="#" class="fa fa-twitter"></a>
+      </div>
+      <div class="footer-logo">
+        <div class="logo">
+          <img
+            src="images/Logo.png"
+            alt=""
+            srcset=""
+            height="50px"
+            width="80px"
+          />
         </div>
-        <div class="footer-logo">
-            <div class="logo"><img src="images/Logo.png" alt="" srcset="" height="50px" width="80px"></div>
-        </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

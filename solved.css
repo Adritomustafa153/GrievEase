@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('images/bg.jpg'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the image */
+    background-attachment: fixed;
+  }
+
+
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
+.solved-grivance{
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    gap: 20px;
+}  
+  
+  .grievance-status {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: left;
+  }
+  
+  .grievance-status h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .grievance-status p {
+    margin: 10px 0;
+  }
+  
+  .status {
+    font-weight: bold;
+  }
+  
+  .solved {
+    color: green;
+  }
+  
+  .not-solved {
+    color: red;
+  }
+
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eb790fd8;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+ 
+
+
+
+}
+.footer-logo {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+
+}
+.logo img {
+    display: block;
+    height: 50px;
+    width: 80px;
+    margin-right : 50px;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eb790fd8;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.footer-logo {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+
+}
+.footer-logo logo {
+    display: block;
+    height: 50px;
+    width: 80px;
+    margin-right : 50px;
+}
+footer div {
+  
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+
+}
+footer p{
+    margin-left : 50px;
+}
+footer h4{
+    margin-left: 350px;
+}
+h1{
+    text-align: center;
+    font-family: 'quote';
+    color: #e5d6d6;
+    margin-bottom: 10px;
+}
+.solved{
+    margin-top: 12vh;
+}
+.social-media a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
