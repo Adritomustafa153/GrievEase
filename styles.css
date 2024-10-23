@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/bg.jpg'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the image */
+    background-attachment: fixed;
+}
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)); /* Dark gradient overlay */
+    z-index: -1; /* Behind the content */
+}
+
+header {
+    background-color: #686d680a;
+    color: white;
+
+  text-align: left;
+    padding: 10px 0;
+    margin-left: 25px;
+
+}
+.header .logo .img{
+height: 20px;
+width: 20px;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+ 
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+    width: 65%;
+    margin-bottom: 20vh
+}
+
+.left, .right {
+    flex: 1;
+}
+
+.left {
+    padding-right: 20px;
+    font-family: 'Times New Roman', Times, serif; 
+    color: black;
+}
+
+.right {
+    padding-left: 20px;
+    text-align: center;
+}
+
+.bot img {
+    width: 100px;
+    animation: bounce 2s infinite;
+}
+
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.description {
+    margin: 20px 0;
+    font-size: 1.1em;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+textarea {
+    width: 90%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1em;
+    resize: none;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #004080;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #003060;
+}
+
+footer {
+    background-color: #4f575f;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.footer .footer-logo{
+    text-align: center;
+}
+.social-media a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
