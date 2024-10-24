@@ -62,6 +62,26 @@
     color: red;
   }
 
+  .center-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18vh;
+}
+
+.link-button {
+    padding: 15px 30px;
+    font-size: 10px;
+    color: white;
+    background-color: #28a745;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.link-button:hover {
+    background-color: #218838;
+}
 
   footer {
     display: flex;
@@ -83,6 +103,7 @@
     display: flex;
     justify-content: flex-end;
     flex-grow: 1;
+    margin-right: 25px;
 
 }
 .logo img {
@@ -126,7 +147,7 @@ footer p{
     margin-left : 50px;
 }
 footer h4{
-    margin-left: 350px;
+    margin-left: 300px;
 }
 h1{
     text-align: center;

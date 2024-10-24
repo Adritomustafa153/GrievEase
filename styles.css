@@ -113,6 +113,31 @@ button:hover {
     background-color: #003060;
 }
 
+.center-button {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 5vh;
+    margin-top: 87px;
+}
+
+.link-button {
+    margin-left: 8px;
+    padding: 12px 20px;
+    font-size: 10px;
+    color: white;
+    background-color: #28a745;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.link-button:hover {
+    background-color: #218838;
+}
+
+
+
 footer {
     display: flex;
     justify-content: space-between;
@@ -148,7 +173,7 @@ footer p{
     margin-left : 50px;
 }
 footer h4{
-    margin-left: 350px;
+    margin-left: 300px;
 }
 h1{
     text-align: center;
