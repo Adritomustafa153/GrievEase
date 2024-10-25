@@ -83,87 +83,61 @@
     background-color: #218838;
 }
 
-  footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #eb790fd8;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
- 
-
-
-
+  /* Footer Styling */
+.footer {
+  background-color: #eb790fd8;
+  color: white;
+  padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-left, .footer-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-center {
+  text-align: center;
+  flex: 2;
+}
+
+.footer h2 {
+  margin: 0;
+}
+
+.footer p {
+  margin: 5px 0;
+  font-size: 8px;
+}
+
 .footer-logo {
-    display: flex;
-    justify-content: flex-end;
-    flex-grow: 1;
-    margin-right: 25px;
-
-}
-.logo img {
-    display: block;
-    height: 50px;
-    width: 80px;
-    margin-right : 50px;
-}
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #eb790fd8;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-.footer-logo {
-    display: flex;
-    justify-content: flex-end;
-    flex-grow: 1;
-
-}
-.footer-logo logo {
-    display: block;
-    height: 50px;
-    width: 80px;
-    margin-right : 50px;
-}
-footer div {
-  
-    display: flex;
-    flex-direction:row;
-    align-items: center;
-
-}
-footer p{
-    margin-left : 50px;
-}
-footer h4{
-    margin-left: 300px;
-}
-h1{
-    text-align: center;
-    font-family: 'quote';
-    color: #e5d6d6;
-    margin-bottom: 10px;
-}
-.solved{
-    margin-top: 12vh;
-}
-.social-media a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
+  max-height: 50px;
+  width: auto;
 }
 
-.social-media a:hover {
-    text-decoration: underline;
+.footer-social-links a {
+  margin: 0 10px;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.footer-social-links a:hover {
+  color: #f0f0f0;
+}
+
+/* Icons from Font Awesome (or similar) */
+.fa-facebook, .fa-twitter, .fa-instagram, .fa-linkedin {
+  transition: color 0.3s ease;
 }

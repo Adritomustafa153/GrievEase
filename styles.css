@@ -89,7 +89,12 @@ width: 20px;
     font-family: 'Times New Roman', Times, serif;
 
 }
-
+h1{
+    text-align: center;
+    font-family: 'quote';
+    color: #e5d6d6;
+    margin-bottom: 10px;
+}
 textarea {
     width: 90%;
     border: 1px solid #ccc;
@@ -136,60 +141,61 @@ button:hover {
     background-color: #218838;
 }
 
-
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* Footer Styling */
+.footer {
     background-color: #eb790fd8;
     color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: absolute;
+    padding: 20px 0;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
-.footer-logo {
-    display: flex;
-    justify-content: flex-end;
-    flex-grow: 1;
 
-}
-.logo img {
-    display: block;
-    height: 50px;
-    width: 80px;
-    margin-right : 50px;
-}
-footer div {
-  
+.footer-content {
     display: flex;
-    flex-direction:row;
+    justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
+.footer-left, .footer-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
-footer p{
-    margin-left : 50px;
-}
-footer h4{
-    margin-left: 300px;
-}
-h1{
+
+.footer-center {
     text-align: center;
-    font-family: 'quote';
-    color: #e5d6d6;
-    margin-bottom: 10px;
-}
-.solved{
-    margin-top: 12vh;
-}
-.social-media a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
+    flex: 2;
 }
 
-.social-media a:hover {
-    text-decoration: underline;
+.footer h2 {
+    margin: 0;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 8px;
+}
+
+.footer-logo {
+    max-height: 50px;
+    width: auto;
+}
+
+.footer-social-links a {
+    margin: 0 10px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.footer-social-links a:hover {
+    color: #f0f0f0;
+}
+
+/* Icons from Font Awesome (or similar) */
+.fa-facebook, .fa-twitter, .fa-instagram, .fa-linkedin {
+    transition: color 0.3s ease;
 }
