@@ -1,89 +1,93 @@
+/* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-image: url('images/bg.jpg'); /* Replace with your image path */
-    background-size: cover; /* Cover the entire page */
-    background-position: center; /* Center the image */
-    background-attachment: fixed;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('images/bg.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 20px; /* Adds padding on smaller screens */
+}
 
 .logo {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-  }
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
 
-.solved-grivance{
-    display: flex;
-    align-content: center;
-    flex-direction: row;
-    gap: 20px;
-}  
-  
-  .grievance-status {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 400px;
-    text-align: left;
-  }
-  
-  .grievance-status h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .grievance-status p {
-    margin: 10px 0;
-  }
-  
-  .status {
-    font-weight: bold;
-  }
-  
-  .solved {
-    color: green;
-  }
-  
-  .not-solved {
-    color: red;
-  }
+.solved-grivance {
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
 
-  .center-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 18vh;
+/* Grievance Status Card */
+.grievance-status {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px; /* Limits max width */
+  text-align: left;
+}
+
+.grievance-status h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.grievance-status p {
+  margin: 10px 0;
+}
+
+.status {
+  font-weight: bold;
+}
+
+.solved {
+  color: green;
+}
+
+.not-solved {
+  color: red;
+}
+
+/* Center Button */
+.center-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 18vh;
 }
 
 .link-button {
-    padding: 15px 30px;
-    font-size: 10px;
-    color: white;
-    background-color: #28a745;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+  padding: 15px 30px;
+  font-size: 14px;
+  color: white;
+  background-color: #28a745;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 .link-button:hover {
-    background-color: #218838;
+  background-color: #218838;
 }
 
-  /* Footer Styling */
+/* Footer Styling */
 .footer {
   background-color: #eb790fd8;
   color: white;
@@ -99,12 +103,15 @@
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
+  flex-wrap: wrap;
+  text-align: center; /* Center-aligns footer text on smaller screens */
 }
 
 .footer-left, .footer-right {
   flex: 1;
   display: flex;
   justify-content: center;
+  margin-bottom: 10px; /* Adds space for smaller screens */
 }
 
 .footer-center {
@@ -118,7 +125,7 @@
 
 .footer p {
   margin: 5px 0;
-  font-size: 8px;
+  font-size: 10px;
 }
 
 .footer-logo {
@@ -137,7 +144,46 @@
   color: #f0f0f0;
 }
 
-/* Icons from Font Awesome (or similar) */
-.fa-facebook, .fa-twitter, .fa-instagram, .fa-linkedin {
-  transition: color 0.3s ease;
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Adjust padding and font sizes */
+  body {
+    padding: 15px;
+  }
+
+  .grievance-status {
+    width: 90%; /* Reduces width on smaller screens */
+    padding: 15px;
+  }
+
+  .footer-content {
+    flex-direction: column; /* Stacks footer content vertically */
+  }
+
+  .link-button {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Small screens */
+  .grievance-status {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .link-button {
+    font-size: 10px;
+    padding: 8px 15px;
+  }
+
+  .footer p {
+    font-size: 8px;
+  }
+
+  .footer-social-links a {
+    font-size: 18px;
+    margin: 0 5px;
+  }
 }
